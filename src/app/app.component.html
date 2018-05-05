@@ -1,9 +1,64 @@
-<div class="grid" #grid>
-  <div class="card" *ngFor="let card of cards">
-    <div class="card-body">
-      <h5 class="card-title">{{ card.title }}</h5>
-      <p class="card-text">{{ card.text }}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
+<!-- 
+            <app-carousel-card></app-carousel-card>
+            <game-card></game-card>
+            <router-outlet></router-outlet>
+     -->
+     <!-- <body>
+        <div id="container">
+            <div id="main">
+                <div class="header">
+                    <app-header></app-header>
+                </div>
+                <app-carousel-card></app-carousel-card>
+                <game-card></game-card>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    
+    
+        <footer id="footer">
+            <app-footer></app-footer>
+        </footer>
+    </body> -->
+    
+    <mat-sidenav-container style="height:100%; background-color:  #d5e1df">
+        <mat-sidenav #sidenav mode="over" opened="false">
+          <side-nav-menu class="bar"title='Maverick' [sidenav]="sidenav">
+            <side-nav-item route="/state" title="Home" icon="home"></side-nav-item>
+            <side-nav-item route="/page1" title="About Us" icon="assignment"></side-nav-item>
+            <side-nav-group>
+              <side-nav-item route="/page2" title="Blogs"></side-nav-item>
+              <side-nav-item route="/page3" title="Help"></side-nav-item>
+            </side-nav-group>
+            <side-nav-group title="submenu 4">
+              <side-nav-item route="/page/4.1" title="Page"></side-nav-item>
+              <side-nav-item route="/page/4.2" title="Page"></side-nav-item>
+            </side-nav-group>
+            <side-nav-x-group title="submenu 5">
+              <side-nav-item route="/page/5.1" title="Page"></side-nav-item>
+              <side-nav-item route="/page/5.2" title="Page"></side-nav-item>
+            </side-nav-x-group>
+            <side-nav-item route="/page/5" title="Page"></side-nav-item>
+            <side-nav-item route="/page/6" title="Page" icon="info"></side-nav-item>
+          </side-nav-menu>
+        </mat-sidenav>
+
+        <mat-toolbar class="header">
+            <mat-toolbar-row>
+              <button mat-icon-button (click)="sidenav.toggle()"><mat-icon class="side-nav-icon">menu</mat-icon></button>
+          <span class="example-spacer"><a class="logo" href=#>Maverick</a></span>
+          <mat-icon class="material-icons">account_circle</mat-icon>
+          <mat-chip-list>
+            <mat-chip class="sign-in-chip"><a class="sign-in" [routerLink]="['/login']">Sign In</a></mat-chip>  </mat-chip-list>
+         </mat-toolbar-row>
+         </mat-toolbar>  
+        
+         <app-carousel-card></app-carousel-card>
+         <!-- <game-card></game-card> -->
+         <router-outlet></router-outlet>
+            <footer id="footer">
+                <app-footer></app-footer>
+            </footer>
+       
+          
+        

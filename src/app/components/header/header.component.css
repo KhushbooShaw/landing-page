@@ -1,0 +1,35 @@
+.example-icon {
+    padding: 0 24px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+.primary {
+
+  background-color: #0C0B0F
+}  
+.row {
+  color: antiquewhite;
+  padding-left:25px;
+}
+
+#user-icon {
+  padding-right: 50px;
+}
+
+.search-box {
+  margin-left: 50%;
+}
+
+.side-nav-icon {
+  color: #EF3E79;
+}
+.logo {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.sign-in {
+  color: aliceblue;
+}

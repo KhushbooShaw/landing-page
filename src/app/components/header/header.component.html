@@ -1,0 +1,23 @@
+<mat-toolbar class="primary">
+<mat-toolbar-row class="row">
+<mat-button-toggle class="side-nav-icon"><mat-icon class="material-icons">reorder</mat-icon></mat-button-toggle>
+  <span class="row"><a class="logo" href=#>Maverick</a></span>
+  <div class="search-box">
+  <form class="navbar-form">
+      <div class="input-group no-border">
+          <input type="text" value="" class="form-control" placeholder="Search...">
+          <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
+              <mat-icon id= "search-icon"class="material-icons">search</mat-icon>
+              <div class="ripple-container"></div>
+          </button>
+      </div>
+  </form>
+</div>
+  <span class="example-spacer"></span>
+  <mat-icon id="user-icon" class="material-icons">account_circle</mat-icon>
+  <mat-chip-list>
+        <mat-chip color="accent" (click)="sidenav.open()" selected="true"><a class="sign-in" [routerLink]="['/login']">Sign In</a></mat-chip>
+
+    </mat-chip-list>
+</mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,26 @@
+<div class="masonry-demo">
+  <div class="grid" #grid>
+    <div class="card" *ngFor="let card of cards">
+      <div class="card-body">
+        <div class="block1 block2 block3">Recommended</div>
+        <div class="tile" [style.background]="'url(assets/images/5.jpeg)'">
+
+          <h5 class="card-title">{{ card.name }}</h5>
+        </div>
+        <p class="card-text f">Questions : {{ card.no_of_question }}</p>
+        <!-- <h5 class="card-title">{{ card.name }}</h5>
+      <img src="assets/images/1.jpg" alt="no image"/>
+      <p class="card-text">{{ card.no_of_question                                                                                                                                                                                                                                                                                            }}</p>
+       -->
+        <br style="clear: both;">
+        <!-- <a href="#" class="btn btn-primary">Play</a> -->
+        <div style="padding-bottom: 30px">
+          <a class="f" mat-raised-button color="primary">Play</a>
+          <a class="ff" mat-raised-button>Readmore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <button *ngIf="limit < 100"  (click)="showMoreImages()">Show More Images</button>
+  <h2 *ngIf="limit >= 100">No More Images</h2> -->
+</div>

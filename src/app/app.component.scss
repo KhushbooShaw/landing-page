@@ -1,14 +1,30 @@
-:host {
-  display: block;
-  margin-top: 1rem;
-}
 
-.grid {
-  margin: 0 auto;
-}
-
-.card {
-  display: inline-block;
-  margin-bottom: 1rem;
-  width: 18rem;
-}
+#footer {
+    position: relative;
+    background-color: #000;
+    height: 100px;
+    margin-top: 0%;
+    clear: both;}
+ .header {
+    background-color: #0C0B0F;
+    color: crimson;
+ }
+ .logo {
+    color: blanchedalmond;
+ }.example-icon {
+    padding: 0 24px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .sign-in-chip {
+      background-color: crimson;
+      color: blanchedalmond;
+  }
+  .sign-in {
+      text-decoration: none;
+      color: blanchedalmond;
+  }
+ 
+  
